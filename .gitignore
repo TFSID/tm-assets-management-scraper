@@ -8,8 +8,17 @@ output.txt
 .venv/*
 dock
 dock/*
+cve-list\*
 chrome_profile
 chrome_profile/*
+experimental\*
+experimental\PRIORITY_ENDPOINTS.txt
+experimental\PRIORITY_ENDPOINTS.txt*
+endpoint_patch_priority.*
+*/PRIORITY_ENDPOINTS.*
+*/PRIORITY_PATCH_SERVERS.*
+**/PRIORITY_ENDPOINTS.*
+**/PRIORITY_PATCH_SERVERS.*
 PRIORITY_PATCH_SERVERS*
 PRIORITY_ENDPOINTS*
 PRIORITY_PATCH_SERVERS.*
