@@ -1,0 +1,213 @@
+2025-06-28 22:03:19,859 - INFO - Starting Chrome browser...
+2025-06-28 22:04:22,724 - ERROR - Error during execution: Message: session not created: DevToolsActivePort file doesn't exist
+Stacktrace:
+	GetHandleVerifier [0x0x7ff650706f65+76917]
+	GetHandleVerifier [0x0x7ff650706fc0+77008]
+	(No symbol) [0x0x7ff6504b9dea]
+	(No symbol) [0x0x7ff6504fc9d9]
+	(No symbol) [0x0x7ff6504f6b3b]
+	(No symbol) [0x0x7ff6504f2675]
+	(No symbol) [0x0x7ff650545e9e]
+	(No symbol) [0x0x7ff650545630]
+	(No symbol) [0x0x7ff650538243]
+	(No symbol) [0x0x7ff650501431]
+	(No symbol) [0x0x7ff6505021c3]
+	GetHandleVerifier [0x0x7ff6509dd29d+3051437]
+	GetHandleVerifier [0x0x7ff6509d78f3+3028483]
+	GetHandleVerifier [0x0x7ff6509f588d+3151261]
+	GetHandleVerifier [0x0x7ff65072182e+185662]
+	GetHandleVerifier [0x0x7ff6507296ef+218111]
+	GetHandleVerifier [0x0x7ff65070fae4+112628]
+	GetHandleVerifier [0x0x7ff65070fc99+113065]
+	GetHandleVerifier [0x0x7ff6506f6c68+10616]
+	BaseThreadInitThunk [0x0x7ffed4f8259d+29]
+	RtlUserThreadStart [0x0x7ffed672af78+40]
+
+2025-06-28 22:05:11,856 - INFO - Starting Chrome browser...
+2025-06-28 22:05:36,930 - INFO - Starting Chrome browser...
+2025-06-28 22:05:38,012 - INFO - Running scenario: google_search
+2025-06-28 22:05:38,012 - INFO - Navigating to: https://www.google.com
+2025-06-28 22:05:38,871 - INFO - Waiting for 2 seconds...
+2025-06-28 22:05:40,872 - INFO - Filling element input[name='q'] with: selenium automation
+2025-06-28 22:05:50,916 - ERROR - Error executing action fill: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff650706f65+76917]
+	GetHandleVerifier [0x0x7ff650706fc0+77008]
+	(No symbol) [0x0x7ff6504b9dea]
+	(No symbol) [0x0x7ff650510256]
+	(No symbol) [0x0x7ff65051050c]
+	(No symbol) [0x0x7ff650563887]
+	(No symbol) [0x0x7ff6505384af]
+	(No symbol) [0x0x7ff65056065c]
+	(No symbol) [0x0x7ff650538243]
+	(No symbol) [0x0x7ff650501431]
+	(No symbol) [0x0x7ff6505021c3]
+	GetHandleVerifier [0x0x7ff6509dd29d+3051437]
+	GetHandleVerifier [0x0x7ff6509d78f3+3028483]
+	GetHandleVerifier [0x0x7ff6509f588d+3151261]
+	GetHandleVerifier [0x0x7ff65072182e+185662]
+	GetHandleVerifier [0x0x7ff6507296ef+218111]
+	GetHandleVerifier [0x0x7ff65070fae4+112628]
+	GetHandleVerifier [0x0x7ff65070fc99+113065]
+	GetHandleVerifier [0x0x7ff6506f6c68+10616]
+	BaseThreadInitThunk [0x0x7ffed4f8259d+29]
+	RtlUserThreadStart [0x0x7ffed672af78+40]
+
+2025-06-28 22:05:50,917 - ERROR - Error during execution: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff650706f65+76917]
+	GetHandleVerifier [0x0x7ff650706fc0+77008]
+	(No symbol) [0x0x7ff6504b9dea]
+	(No symbol) [0x0x7ff650510256]
+	(No symbol) [0x0x7ff65051050c]
+	(No symbol) [0x0x7ff650563887]
+	(No symbol) [0x0x7ff6505384af]
+	(No symbol) [0x0x7ff65056065c]
+	(No symbol) [0x0x7ff650538243]
+	(No symbol) [0x0x7ff650501431]
+	(No symbol) [0x0x7ff6505021c3]
+	GetHandleVerifier [0x0x7ff6509dd29d+3051437]
+	GetHandleVerifier [0x0x7ff6509d78f3+3028483]
+	GetHandleVerifier [0x0x7ff6509f588d+3151261]
+	GetHandleVerifier [0x0x7ff65072182e+185662]
+	GetHandleVerifier [0x0x7ff6507296ef+218111]
+	GetHandleVerifier [0x0x7ff65070fae4+112628]
+	GetHandleVerifier [0x0x7ff65070fc99+113065]
+	GetHandleVerifier [0x0x7ff6506f6c68+10616]
+	BaseThreadInitThunk [0x0x7ffed4f8259d+29]
+	RtlUserThreadStart [0x0x7ffed672af78+40]
+
+2025-06-28 22:05:53,432 - INFO - Browser closed
+2025-06-28 22:35:04,738 - INFO - Starting Chrome browser...
+2025-06-28 22:35:05,802 - INFO - Running scenario: google_search
+2025-06-28 22:35:05,803 - INFO - Navigating to: https://www.google.com
+2025-06-28 22:35:06,343 - INFO - Waiting for 2 seconds...
+2025-06-28 22:35:08,344 - INFO - Filling element input[name='q'] with: selenium automation
+2025-06-28 22:35:18,360 - ERROR - Error executing action fill: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff650706f65+76917]
+	GetHandleVerifier [0x0x7ff650706fc0+77008]
+	(No symbol) [0x0x7ff6504b9dea]
+	(No symbol) [0x0x7ff650510256]
+	(No symbol) [0x0x7ff65051050c]
+	(No symbol) [0x0x7ff650563887]
+	(No symbol) [0x0x7ff6505384af]
+	(No symbol) [0x0x7ff65056065c]
+	(No symbol) [0x0x7ff650538243]
+	(No symbol) [0x0x7ff650501431]
+	(No symbol) [0x0x7ff6505021c3]
+	GetHandleVerifier [0x0x7ff6509dd29d+3051437]
+	GetHandleVerifier [0x0x7ff6509d78f3+3028483]
+	GetHandleVerifier [0x0x7ff6509f588d+3151261]
+	GetHandleVerifier [0x0x7ff65072182e+185662]
+	GetHandleVerifier [0x0x7ff6507296ef+218111]
+	GetHandleVerifier [0x0x7ff65070fae4+112628]
+	GetHandleVerifier [0x0x7ff65070fc99+113065]
+	GetHandleVerifier [0x0x7ff6506f6c68+10616]
+	BaseThreadInitThunk [0x0x7ffed4f8259d+29]
+	RtlUserThreadStart [0x0x7ffed672af78+40]
+
+2025-06-28 22:35:18,361 - ERROR - Error during execution: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff650706f65+76917]
+	GetHandleVerifier [0x0x7ff650706fc0+77008]
+	(No symbol) [0x0x7ff6504b9dea]
+	(No symbol) [0x0x7ff650510256]
+	(No symbol) [0x0x7ff65051050c]
+	(No symbol) [0x0x7ff650563887]
+	(No symbol) [0x0x7ff6505384af]
+	(No symbol) [0x0x7ff65056065c]
+	(No symbol) [0x0x7ff650538243]
+	(No symbol) [0x0x7ff650501431]
+	(No symbol) [0x0x7ff6505021c3]
+	GetHandleVerifier [0x0x7ff6509dd29d+3051437]
+	GetHandleVerifier [0x0x7ff6509d78f3+3028483]
+	GetHandleVerifier [0x0x7ff6509f588d+3151261]
+	GetHandleVerifier [0x0x7ff65072182e+185662]
+	GetHandleVerifier [0x0x7ff6507296ef+218111]
+	GetHandleVerifier [0x0x7ff65070fae4+112628]
+	GetHandleVerifier [0x0x7ff65070fc99+113065]
+	GetHandleVerifier [0x0x7ff6506f6c68+10616]
+	BaseThreadInitThunk [0x0x7ffed4f8259d+29]
+	RtlUserThreadStart [0x0x7ffed672af78+40]
+
+2025-06-28 22:35:20,853 - INFO - Browser closed
+2025-06-28 22:35:30,097 - INFO - Starting Chrome browser...
+2025-06-28 22:35:31,149 - INFO - Running scenario: google_search
+2025-06-28 22:35:31,150 - INFO - Navigating to: https://www.google.com
+2025-06-28 22:35:31,659 - INFO - Waiting for 2 seconds...
+2025-06-28 22:35:33,659 - INFO - Filling element input[name='q'] with: selenium automation
+2025-06-28 22:35:43,693 - ERROR - Error executing action fill: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff650706f65+76917]
+	GetHandleVerifier [0x0x7ff650706fc0+77008]
+	(No symbol) [0x0x7ff6504b9dea]
+	(No symbol) [0x0x7ff650510256]
+	(No symbol) [0x0x7ff65051050c]
+	(No symbol) [0x0x7ff650563887]
+	(No symbol) [0x0x7ff6505384af]
+	(No symbol) [0x0x7ff65056065c]
+	(No symbol) [0x0x7ff650538243]
+	(No symbol) [0x0x7ff650501431]
+	(No symbol) [0x0x7ff6505021c3]
+	GetHandleVerifier [0x0x7ff6509dd29d+3051437]
+	GetHandleVerifier [0x0x7ff6509d78f3+3028483]
+	GetHandleVerifier [0x0x7ff6509f588d+3151261]
+	GetHandleVerifier [0x0x7ff65072182e+185662]
+	GetHandleVerifier [0x0x7ff6507296ef+218111]
+	GetHandleVerifier [0x0x7ff65070fae4+112628]
+	GetHandleVerifier [0x0x7ff65070fc99+113065]
+	GetHandleVerifier [0x0x7ff6506f6c68+10616]
+	BaseThreadInitThunk [0x0x7ffed4f8259d+29]
+	RtlUserThreadStart [0x0x7ffed672af78+40]
+
+2025-06-28 22:35:43,694 - ERROR - Error during execution: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff650706f65+76917]
+	GetHandleVerifier [0x0x7ff650706fc0+77008]
+	(No symbol) [0x0x7ff6504b9dea]
+	(No symbol) [0x0x7ff650510256]
+	(No symbol) [0x0x7ff65051050c]
+	(No symbol) [0x0x7ff650563887]
+	(No symbol) [0x0x7ff6505384af]
+	(No symbol) [0x0x7ff65056065c]
+	(No symbol) [0x0x7ff650538243]
+	(No symbol) [0x0x7ff650501431]
+	(No symbol) [0x0x7ff6505021c3]
+	GetHandleVerifier [0x0x7ff6509dd29d+3051437]
+	GetHandleVerifier [0x0x7ff6509d78f3+3028483]
+	GetHandleVerifier [0x0x7ff6509f588d+3151261]
+	GetHandleVerifier [0x0x7ff65072182e+185662]
+	GetHandleVerifier [0x0x7ff6507296ef+218111]
+	GetHandleVerifier [0x0x7ff65070fae4+112628]
+	GetHandleVerifier [0x0x7ff65070fc99+113065]
+	GetHandleVerifier [0x0x7ff6506f6c68+10616]
+	BaseThreadInitThunk [0x0x7ffed4f8259d+29]
+	RtlUserThreadStart [0x0x7ffed672af78+40]
+
+2025-06-28 22:35:46,191 - INFO - Browser closed
+2025-06-28 22:37:37,215 - INFO - Starting Chrome browser...
+2025-06-28 22:38:39,906 - ERROR - Error during execution: Message: session not created: DevToolsActivePort file doesn't exist
+Stacktrace:
+	GetHandleVerifier [0x0x7ff650706f65+76917]
+	GetHandleVerifier [0x0x7ff650706fc0+77008]
+	(No symbol) [0x0x7ff6504b9dea]
+	(No symbol) [0x0x7ff6504fc9d9]
+	(No symbol) [0x0x7ff6504f6b3b]
+	(No symbol) [0x0x7ff6504f2675]
+	(No symbol) [0x0x7ff650545e9e]
+	(No symbol) [0x0x7ff650545630]
+	(No symbol) [0x0x7ff650538243]
+	(No symbol) [0x0x7ff650501431]
+	(No symbol) [0x0x7ff6505021c3]
+	GetHandleVerifier [0x0x7ff6509dd29d+3051437]
+	GetHandleVerifier [0x0x7ff6509d78f3+3028483]
+	GetHandleVerifier [0x0x7ff6509f588d+3151261]
+	GetHandleVerifier [0x0x7ff65072182e+185662]
+	GetHandleVerifier [0x0x7ff6507296ef+218111]
+	GetHandleVerifier [0x0x7ff65070fae4+112628]
+	GetHandleVerifier [0x0x7ff65070fc99+113065]
+	GetHandleVerifier [0x0x7ff6506f6c68+10616]
+	BaseThreadInitThunk [0x0x7ffed4f8259d+29]
+	RtlUserThreadStart [0x0x7ffed672af78+40]
+

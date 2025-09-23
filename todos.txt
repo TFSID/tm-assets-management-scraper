@@ -1,0 +1,16 @@
+https://shopee.co.id/search_user/?keyword=Blush&page=1
+https://shopee.co.id/search_user/?keyword=Bloom&page=1
+https://shopee.co.id/search_user/?keyword=Silhouette&page=1
+https://shopee.co.id/search_user/?keyword=Velvet&page=1
+https://shopee.co.id/search_user/?keyword=Pastel&page=1
+https://shopee.co.id/search_user/?keyword=Fashion&page=1
+https://shopee.co.id/search_user/?keyword=Fashion&page=2
+https://shopee.co.id/search_user/?keyword=Fashion&page=3
+--until--
+https://shopee.co.id/search_user/?keyword=Fashion&page=81
+
+https://shopee.co.id/search_user/?keyword=Style&page=1
+
+https://shopee.co.id/search_user/?keyword=Clothing&page=1
+--until---
+https://shopee.co.id/search_user/?keyword=Clothing&page=81

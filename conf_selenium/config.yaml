@@ -1,0 +1,241 @@
+# Browser Configuration
+browser:
+  user_data_dir: "C:\\Users\\Akasata\\AppData\\Local\\Google\\Chrome\\User Data"
+  profile_directory: "Profile 1"
+  headless: false  # Set to true for headless mode
+  window_size: "1920,1080"
+  chrome_options:
+    - "--disable-background-networking"
+    - "--disable-notifications" 
+    - "--disable-default-apps"
+    - "--no-default-browser-check"
+    - "--disable-popup-blocking"
+    - "--start-maximized"
+    - "--disable-blink-features=AutomationControlled"
+    - "--disable-extensions"
+
+# Timeout Configuration
+timeouts:
+  implicit: 10      # Implicit wait in seconds
+  page_load: 30     # Page load timeout in seconds
+  explicit: 15      # Default explicit wait for elements
+
+# Logging Configuration
+logging:
+  level: "INFO"     # DEBUG, INFO, WARNING, ERROR
+  file: "automation.log"
+  format: "%(asctime)s - %(levelname)s - %(message)s"
+
+# Scenarios to run automatically (leave empty for interactive mode)
+run_scenarios:
+  - "google_search"
+  # - "login_example"
+  # - "scrape_data"
+
+# Define your automation scenarios
+scenarios:
+  
+  # Example 1: Simple Google Search
+  google_search:
+    pre_actions:
+      - type: "navigate"
+        url: "https://www.google.com"
+      - type: "wait"
+        duration: 2
+        
+    actions:
+      - type: "fill"
+        selector: "input[name='q']"
+        text: "selenium automation"
+        clear: true
+        
+      - type: "send_keys"
+        keys: "ENTER"
+        
+      - type: "wait_for_element"
+        selector: "#search"
+        timeout: 10
+        
+      - type: "screenshot"
+        filename: "google_results.png"
+        
+    post_actions:
+      - type: "wait"
+        duration: 1
+
+  # Example 2: Login Flow
+  login_example:
+    pre_actions:
+      - type: "navigate"
+        url: "https://example-site.com/login"
+        
+    actions:
+      - type: "wait_for_element"
+        selector: "#username"
+        timeout: 10
+        
+      - type: "fill"
+        selector: "#username"
+        text: "your_username"
+        
+      - type: "fill"
+        selector: "#password"
+        text: "your_password"
+        
+      - type: "click"
+        selector: "button[type='submit']"
+        
+      - type: "wait_for_element"
+        selector: ".dashboard"
+        timeout: 15
+        
+      - type: "screenshot"
+        filename: "logged_in.png"
+
+  # Example 3: Data Scraping
+  scrape_data:
+    pre_actions:
+      - type: "navigate"
+        url: "https://example-site.com/data"
+        
+    actions:
+      - type: "wait_for_element"
+        selector: ".data-table"
+        timeout: 10
+        
+      - type: "extract_text"
+        selector: ".total-count"
+        variable: "total_items"
+        
+      - type: "extract_attribute"
+        selector: "a.download-link"
+        attribute: "href"
+        variable: "download_url"
+        
+      - type: "scroll"
+        direction: "bottom"
+        
+      - type: "screenshot"
+        filename: "scraped_data.png"
+
+  # Example 4: E-commerce Product Search
+  product_search:
+    pre_actions:
+      - type: "navigate"
+        url: "https://example-store.com"
+        
+    actions:
+      - type: "click"
+        selector: ".search-icon"
+        timeout: 5
+        
+      - type: "fill"
+        selector: "input[placeholder*='Search']"
+        text: "laptop"
+        
+      - type: "send_keys"
+        keys: "ENTER"
+        
+      - type: "wait_for_element"
+        selector: ".product-grid"
+        timeout: 10
+        
+      - type: "scroll"
+        direction: "down"
+        pixels: 1000
+        
+      - type: "click"
+        selector: ".product-item:first-child"
+        
+      - type: "wait_for_element"
+        selector: ".product-details"
+        timeout: 10
+        
+      - type: "extract_text"
+        selector: ".product-title"
+        variable: "product_name"
+        
+      - type: "extract_text"
+        selector: ".price"
+        variable: "product_price"
+        
+      - type: "screenshot"
+        filename: "product_details.png"
+
+  # Example 5: Form Filling with Multiple Steps
+  complex_form:
+    pre_actions:
+      - type: "navigate"
+        url: "https://example-form.com"
+        
+    actions:
+      # Step 1: Personal Info
+      - type: "fill"
+        selector: "#firstName"
+        text: "John"
+        
+      - type: "fill"
+        selector: "#lastName" 
+        text: "Doe"
+        
+      - type: "fill"
+        selector: "#email"
+        text: "john.doe@example.com"
+        
+      - type: "click"
+        selector: "button.next-step"
+        
+      # Step 2: Address
+      - type: "wait_for_element"
+        selector: "#address"
+        timeout: 5
+        
+      - type: "fill"
+        selector: "#address"
+        text: "123 Main St"
+        
+      - type: "fill"
+        selector: "#city"
+        text: "New York"
+        
+      - type: "click"
+        selector: "select#state"
+        
+      - type: "click"
+        selector: "option[value='NY']"
+        
+      - type: "click"
+        selector: "button.submit-form"
+        
+      - type: "wait_for_element"
+        selector: ".success-message"
+        timeout: 10
+        
+      - type: "screenshot"
+        filename: "form_submitted.png"
+
+  # Example 6: Multi-tab Navigation
+  multi_tab_workflow:
+    pre_actions:
+      - type: "navigate"
+        url: "https://example1.com"
+        
+    actions:
+      - type: "click"
+        selector: "a[target='_blank']"  # Opens in new tab
+        
+      - type: "switch_tab"
+        index: -1  # Switch to last opened tab
+        
+      - type: "wait_for_element"
+        selector: "body"
+        timeout: 5
+        
+      - type: "screenshot"
+        filename: "new_tab.png"
+        
+      - type: "switch_tab"
+        index: 0  # Switch back to first tab
+        
+      - type: "screenshot"
+        filename: "original_tab.png"

@@ -1,0 +1,1 @@
+in order to run this script with a profile, you need to set the `user_data_dir` and `profile_dir` variables below. and make sure the chrome profile exists at this path.

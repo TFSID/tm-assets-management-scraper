@@ -1,0 +1,144 @@
+{
+  "browser": {
+    "user_data_dir": "D:\\TFS\\Github\\soc-documentation\\tools\\scraper\\simple-selenium-scraper\\chrome_profile",
+    "profile_directory": "Profile 1",
+    "headless": false,
+    "window_size": "1920,1080",
+    "chrome_options": [
+      "--disable-background-networking",
+      "--disable-notifications",
+      "--disable-default-apps",
+      "--no-default-browser-check",
+      "--disable-popup-blocking",
+      "--start-maximized",
+      "--disable-blink-features=AutomationControlled",
+      "--disable-extensions"
+    ]
+  },
+  "timeouts": {
+    "implicit": 10,
+    "page_load": 30,
+    "explicit": 15
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "automation.log",
+    "format": "%(asctime)s - %(levelname)s - %(message)s"
+  },
+  "run_scenarios": [
+    "google_search"
+  ],
+  "scenarios": {
+    "google_search": {
+      "pre_actions": [
+        {
+          "type": "navigate",
+          "url": "https://www.google.com"
+        },
+        {
+          "type": "wait",
+          "duration": 2
+        }
+      ],
+      "actions": [
+        {
+          "type": "fill",
+          "selector": "input[name='q']",
+          "text": "selenium automation",
+          "clear": true
+        },
+        {
+          "type": "send_keys",
+          "keys": "ENTER"
+        },
+        {
+          "type": "wait_for_element",
+          "selector": "#search",
+          "timeout": 10
+        },
+        {
+          "type": "screenshot",
+          "filename": "google_results.png"
+        }
+      ],
+      "post_actions": [
+        {
+          "type": "wait",
+          "duration": 1
+        }
+      ]
+    },
+    "login_example": {
+      "pre_actions": [
+        {
+          "type": "navigate",
+          "url": "https://example-site.com/login"
+        }
+      ],
+      "actions": [
+        {
+          "type": "wait_for_element",
+          "selector": "#username",
+          "timeout": 10
+        },
+        {
+          "type": "fill",
+          "selector": "#username",
+          "text": "your_username"
+        },
+        {
+          "type": "fill",
+          "selector": "#password",
+          "text": "your_password"
+        },
+        {
+          "type": "click",
+          "selector": "button[type='submit']"
+        },
+        {
+          "type": "wait_for_element",
+          "selector": ".dashboard",
+          "timeout": 15
+        },
+        {
+          "type": "screenshot",
+          "filename": "logged_in.png"
+        }
+      ]
+    },
+    "scrape_data": {
+      "pre_actions": [
+        {
+          "type": "navigate",
+          "url": "https://example-site.com/data"
+        }
+      ],
+      "actions": [
+        {
+          "type": "wait_for_element",
+          "selector": ".data-table",
+          "timeout": 10
+        },
+        {
+          "type": "extract_text",
+          "selector": ".total-count",
+          "variable": "total_items"
+        },
+        {
+          "type": "extract_attribute",
+          "selector": "a.download-link",
+          "attribute": "href",
+          "variable": "download_url"
+        },
+        {
+          "type": "scroll",
+          "direction": "bottom"
+        },
+        {
+          "type": "screenshot",
+          "filename": "scraped_data.png"
+        }
+      ]
+    }
+  }
+}
