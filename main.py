@@ -441,13 +441,31 @@ def test_selenium_session(driver, target_url):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Fetch CVE info using Selenium session or API call.")
     parser.add_argument(
-        "--cve", 
-        required=True,
-        help="CVE ID to query (e.g., CVE-2015-7645)"
+        "--cve",
+        help="CVE ID to query (e.g., CVE-2015-7645) or path to a file with CVE IDs."
     )
-    args = parser.parse_args()
-    cve_input = args.cve
+    parser.add_argument(
+        "--get-session",
+        action='store_true',
+        help="Run function to get a new session and save it to cookies.pkl. Ignores other arguments."
+    )
 
+    # parser.add_argument(
+    #     "--output-csv",
+    #     action='visualize_data',
+    #     help="create data visualization from csv output"
+    # )
+    args = parser.parse_args()
+
+    if args.get_session:
+        print("[INFO] Running in 'get-session' mode to create/update cookies.pkl.")
+        test_selenium_session(create_driver(), target_url="https://portal.sg.xdr.trendmicro.com/public/ass/api/v1/trilogy/deviceListByCve?cveId=CVE-2023-36025&offset=0&limit=1&period=30&status=new")
+        sys.exit()
+
+    if not args.cve:
+        parser.error("argument --cve is required when not using --get-session.")
+
+    cve_input = args.cve
 
     # Gunakan try-except untuk mendeteksi apakah input adalah file atau bukan
     try:
@@ -473,6 +491,7 @@ if __name__ == "__main__":
                         target = f"https://portal.sg.xdr.trendmicro.com/public/ass/api/v1/trilogy/deviceListByCve?cveId={CVEID}&offset=0&limit=1&period=30&status=new"
                         deviceListData = test_selenium_session(driver, target)
                     data = []
+                    print(deviceListData)
                     data.append(deviceListData.text)
                     data = json.loads("".join(data))
                     results = get_device_info(data)
