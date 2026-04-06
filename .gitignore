@@ -25,3 +25,12 @@ PRIORITY_PATCH_SERVERS.*
 PRIORITY_ENDPOINTS.*
 */PRIORITY_PATCH_SERVERS*
 */PRIORITY_ENDPOINTS*
+
+*.xlsx
+*.csv
+
+*/.xlsx
+*/.csv
+
+**/.xlsx
+**/.csv
